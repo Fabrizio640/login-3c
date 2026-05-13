@@ -1,0 +1,139 @@
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #141414;
+  padding: 48px 5%;
+  box-sizing: border-box;
+}
+
+.listagem-container {
+  width: 100%;
+  max-width: 900px;
+}
+
+.listagem-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.listagem-titulo {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.6rem;
+  color: #fff;
+  margin: 0;
+}
+
+.btn-novo {
+  height: 40px;
+  padding: 0 20px;
+  background: #e50914;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.btn-novo:hover {
+  background: #b20710;
+}
+
+.listagem-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.listagem-table thead tr {
+  background: #1a1a1a;
+}
+
+.listagem-table th {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: bold;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1.5px solid #333;
+}
+
+.listagem-table tbody tr {
+  border-bottom: 1px solid #222;
+  transition: background 0.15s ease;
+}
+
+.listagem-table tbody tr:hover {
+  background: #2a2a2a;
+}
+
+.listagem-table td {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 0.95rem;
+  color: #fff;
+  padding: 14px 16px;
+}
+
+.btn-acao {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background 0.15s ease;
+}
+
+.btn-editar:hover {
+  background: rgba(229, 9, 20, 0.15);
+}
+
+.btn-excluir:hover {
+  background: rgba(229, 9, 20, 0.25);
+}
+
+/* TABLET */
+@media (min-width: 768px) and (max-width: 1024px) {
+  main {
+    padding: 36px 5%;
+  }
+}
+
+/* CELULAR */
+@media (max-width: 767px) {
+  main {
+    padding: 24px 4%;
+  }
+
+  .listagem-titulo {
+    font-size: 1.2rem;
+  }
+
+  .listagem-table th,
+  .listagem-table td {
+    padding: 10px 10px;
+    font-size: 0.85rem;
+  }
+
+  .btn-novo {
+    height: 36px;
+    padding: 0 14px;
+    font-size: 0.82rem;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1025px) {
+  main {
+    padding: 56px 5%;
+  }
+}
