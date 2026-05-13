@@ -113,6 +113,26 @@ input:focus {
   color: #fff;
 }
 
+.cadastro-texto {
+  width: 100%;
+  text-align: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 18px;
+}
+
+.link-cadastro {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.link-cadastro:hover {
+  text-decoration: underline;
+}
+
 /* TABLET */
 @media (min-width: 768px) and (max-width: 1024px) {
   .catalogo-panel {
@@ -185,7 +205,8 @@ input:focus {
     font-size: 0.9rem;
   }
 
-  .link-forgot {
+  .link-forgot,
+  .cadastro-texto {
     font-size: 0.85rem;
   }
 }
